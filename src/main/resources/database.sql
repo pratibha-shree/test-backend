@@ -16,7 +16,6 @@ create table recipe(
 );
 create table recipe_ingredient(
     id int(11) not null AUTO_INCREMENT,
-    name varchar(100) not null,
     amount int not null,
     ingredient_id int not null,
     recipe_id int not null,

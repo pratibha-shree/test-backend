@@ -11,7 +11,7 @@ public class RdsHikariDataSource extends HikariDataSource {
         this.setPoolName("RdsHikariDatasource");
         this.setRegisterMbeans(true);
         this.setConnectionTestQuery("SELECT 1");
-        this.setDataSourceClassName("com.mysql.cj.jdbc.Driver");
+        
         this.setMaximumPoolSize(5);
         Properties dsProperties = new Properties();
         dsProperties.setProperty("url", jdbcUrl);

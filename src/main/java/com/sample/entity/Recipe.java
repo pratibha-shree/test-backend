@@ -27,8 +27,8 @@ public class Recipe {
 	private String description;
 	 @Column(name = "image_url")
 	private String imageUrl;
-	 @OneToMany(fetch = FetchType.LAZY, mappedBy = "recipe")
-	 @JsonIgnore
+	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "recipe")
+	
 	private List<RecipeIngredient> ingredients;
 	public Integer getId() {
 		return id;

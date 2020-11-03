@@ -65,7 +65,7 @@ public class RecipeIngredientDao {
 	    }
 	    public List<RecipeIngredient> findAll(){
 	        try{
-	            Query query = entityManager.createQuery("select ri from recipeIngredient i");
+	            Query query = entityManager.createQuery("select ri from RecipeIngredient ri");
 	           List<RecipeIngredient> recipeIngredientsList = query.getResultList();
 	           return recipeIngredientsList;
 	        }catch(Exception e){

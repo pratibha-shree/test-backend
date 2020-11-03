@@ -63,7 +63,7 @@ public class RecipeDao {
 	    }
 	    public List<Recipe> findAll(){
 	        try{
-	            Query query = entityManager.createQuery("select re from recipe re");
+	            Query query = entityManager.createQuery("select re from Recipe re");
 	           List<Recipe> recipeList = query.getResultList();
 	           return recipeList;
 	        }catch(Exception e){
